@@ -48,6 +48,9 @@ def userSearch(id):
     users = loadUsers()
     return users[id].id
 
+@app.route('/')
+def saludar():
+    return '<h1>Prueba técnica de Daniel Santamaría Álvarez para Data Engineer</h1>'
 
 @app.route('/neares_airport/<string:user_id>')
 def airportName(user_id):
