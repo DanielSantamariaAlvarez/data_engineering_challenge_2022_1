@@ -48,7 +48,7 @@ def userSearch(id):
     users = loadUsers()
     return users[id].id
 
-@app.route('/')
+@app.route('/home')
 def saludar():
     return '<h1>Prueba técnica de Daniel Santamaría Álvarez para Data Engineer</h1>'
 
